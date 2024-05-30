@@ -8,8 +8,6 @@ const ProductDetailsPage = () => {
     const [product, setProduct] = React.useState(null);
 
     React.useEffect(() => {
-        // Fetch product details using productId
-        // For simplicity, let's assume fetchProductById is defined
         fetchProductById(productId).then(data => setProduct(data));
     }, [productId]);
 

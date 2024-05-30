@@ -8,7 +8,6 @@ const AllProductsPage = () => {
     const [filters, setFilters] = useState({ category: '', company: '', rating: 0, minPrice: 0, maxPrice: 10000 });
 
     useEffect(() => {
-        // Example fetching top 10 products
         fetchProducts('AMZ', 'Laptop', 1, 10000, 10).then(data => setProducts(data));
     }, []);
 
